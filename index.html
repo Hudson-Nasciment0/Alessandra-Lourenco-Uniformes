@@ -4,36 +4,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Uniformes profissionais personalizados de alta qualidade - Raquel Lourenço">
     <link rel="stylesheet" href="styles.css">
-    <title>Raquel Lourenço</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Raquel Lourenço - Uniformes Profissionais</title>
 </head>
 
 <body>
-
-    <!-----header design----->
-
     <header>
-
-        <img class="img-logo" src="img/Moda-feminina2.png" alt="logo">
-
+        <img class="img-logo" src="img/Moda-feminina2.png" alt="Logo Raquel Lourenço Uniformes">
         <nav>
-
-            <a href="">Home</a>
-            <a href="">Sobre Nós</a>
-            <a href="">Catalogo</a>
-            <a href="">Contato</a>
-            <a href="">Endereço</a>
-
+            <button id="menu-toggle" aria-label="Toggle menu">☰</button>
+            <ul id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#catalogo">Catálogo</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
         </nav>
-
     </header>
 
-    <!-----section design----->
+    <main>
+        <section id="home">
+            <article class="main">
+                <div class="box-img">
+                    <img src="./img/uni4.png" alt="Exemplo de uniforme profissional">
+                </div>
+                <div class="text-box">
+                    <h1>Uniformes Profissionais</h1>
+                    <p>Fornecemos uniformes profissionais de alta qualidade, personalizados para atender às necessidades específicas da sua empresa. Nossa experiência e compromisso com a excelência garantem conforto e estilo para sua equipe.</p>
+                    <button class="contactar">Fazer o orçamento</button>
+                </div>
+            </article>
+        </section>
 
-    <section>
+        <section id="sobre">
+            <h2>SOBRE NÓS</h2>
+            <div class="sobre">
+                <div class="logoTwo">
+                    <img src="img/Moda-feminina2.png" alt="Logo secundário Raquel Lourenço" width="300">
+                </div>
+                <div class="text-box two">
+                    <h3>A Nossa missão</h3>
+                    <p>Nossa missão é proporcionar soluções personalizadas que não apenas atendam, mas excedam as expectativas de nossos clientes. Guiados pela inovação e compromisso com a satisfação do cliente, buscamos constantemente aprimorar nossos produtos e serviços.</p>
+                </div>
+            </div>
+        </section>
 
-    </section>
+        <section id="catalogo">
+            <h2>Nosso catálogo</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="masculino">Masculino</button>
+                <button class="filter-btn" data-filter="feminino">Feminino</button>
+            </div>
+            <div class="box-container">
+                <div class="catalog-item" data-category="unisex">
+                    <img src="./img/avental.jpg" alt="Avental" width="150" height="170">
+                    <p>Avental</p>
+                </div>
+                <div class="catalog-item" data-category="masculino">
+                    <img src="./img/camiseta-algodao-m.jpg" alt="Camiseta 100% algodão masculina" width="150" height="170">
+                    <p>Camiseta 100% algodão masculina</p>
+                </div>
+                <div class="catalog-item" data-category="feminino">
+                    <img src="./img/camiseta-poliester-f.jpg" alt="Camiseta poliéster feminina" width="150" height="170">
+                    <p>Camiseta poliéster feminina</p>
+                </div>
+                <div class="catalog-item" data-category="masculino">
+                    <img src="./img/calca-brim-m.jpg" alt="Calça Brim masculina" width="150" height="180">
+                    <p>Calça Brim masculina</p>
+                </div>
+                <div class="catalog-item" data-category="feminino">
+                    <img src="./img/calca-brim-f.jpg" alt="Calça Brim feminina" width="150" height="180">
+                    <p>Calça Brim feminina</p>
+                </div>
+            </div>
+        </section>
 
+        <section id="contato">
+            <h2>Entre em Contato</h2>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Seu nome" required>
+                <input type="email" name="email" placeholder="Seu e-mail" required>
+                <textarea name="message" placeholder="Sua mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Raquel Lourenço Uniformes. Todos os direitos reservados.</p>
+        <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-
+<script>script.js</script>
 </html>
