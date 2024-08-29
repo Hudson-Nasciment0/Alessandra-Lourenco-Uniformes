@@ -3,11 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body{
+    background: url(https://i.pinimg.com/564x/91/15/0b/91150bef38491b46c23edc9d67f5fa60.jpg);
+    background-size: 100vw 100vh;
+    z-index: -20;
+    overflow-x: hidden;
+}
 
 
 .img-logo{
-    width: 12rem;
+    width: 12vw;
+    height: 25vh;
+    position: relative;
+    bottom: 50px;
     
 }
 
@@ -15,10 +23,98 @@ header{
     display: flex;
     gap: 40%;
     padding: 2% 3%;
+    box-shadow: 1px 1px 10px #4f4f4f;
+    height: 90px;
+    backdrop-filter: blur(20px);
 }
 
 nav{
-   margin-top: 40px;
+   margin-top: 15px;
    display: flex;
-   gap: 60px;
+   gap: 55px;
+   
+}
+nav a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 19px;
+    font-family: "Nerko One", sans-serif;
+}
+nav a:hover{
+    font-size: 21px;
+    color: #f945b1;
+    border-bottom: 1px solid #f945b1;
+    transition: 2s;
+}
+.main{
+    display: flex;
+}
+.box-img{
+    position: relative;
+    left: 8%;
+}
+.text-box{
+    display: block;
+    margin: auto 0;
+    position: relative;
+    left: 9%;
+}
+.text-box h1{
+    font-family: "Nerko One", sans-serif;
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+.text-box p{
+    font-family: "Nerko One", sans-serif;
+    font-size: 20px;
+    width: 500px;
+    margin-bottom: 20px;
+}
+.contactar{
+    width: 15vw;
+    height: 8vh;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Nerko One", sans-serif;
+    background-color: #f93bad;
+    border: none;
+    border-radius: 10px;
+}
+.contactar:hover {
+    font-size: 20px;
+    background-color: #fd55ba;
+    transition: 2s;
+}
+.buttons{
+    display: flex;
+}
+h2{
+    position: relative;
+    left: 45%;
+    margin-bottom: 1.5em;
+    margin-top: 2em;
+    font-family: "Nerko One", sans-serif;
+    font-size: 30px;
+    
+}
+
+.sobre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.two{
+    height: 15vw;
+    padding: 2em;
+    border-radius: 10px;
+    position: relative;
+    bottom: 2em;
+}
+h3{
+    font-size: 35px;
+    font-family: "Nerko One", sans-serif;
+}
+.masc{
+    display: flex;
+    gap: 5%;
 }

@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
     <title>Raquel Lourenço</title>
 </head>
 
@@ -14,15 +17,14 @@
 
     <header>
 
-        <img class="img-logo" src="img/Moda-feminina2.png" alt="logo">
+        <img class="img-logo" src="./img/logo.png" alt="logo">
 
         <nav>
 
-            <a href="">Home</a>
-            <a href="">Sobre Nós</a>
+            <a href="#home">Home</a>
+            <a href="#sobre">Sobre Nós</a>
             <a href="">Catalogo</a>
             <a href="">Contato</a>
-            <a href="">Endereço</a>
 
         </nav>
 
@@ -30,7 +32,59 @@
 
     <!-----section design----->
 
-    <section>
+    <section id="home">
+        <article class="main">
+            <div class="box-img">
+                <img src="./img/uni4.png" alt="">
+            </div>
+            <div class="text-box">
+                <h1>Uniformes Profissionais</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+                   assumenda numquam, dolor enim quis veniam illum alias nulla repellendus
+                   cupiditate ab dolorem nam corrupti ea eius deserunt a nostrum repellat.</p>
+                <button class="contactar">Fazer o orçamento</button> 
+               
+            </div>
+            
+        </article>
+    </section>
+    <section id="sobre">
+            <h2>SOBRE NÓS</h2>
+        <div class="sobre">
+            <div class="logoTwo">
+                <img src="./img/logo2.png" width="300px">
+            </div>
+            <div class="text-box two">
+                <h3>A Nossa missão</h2>
+                <p>Nossa missão é proporcionar soluções personalizadas que não apenas atendam, mas excedam as expectativas de nossos clientes.
+                   Guiados pela inovação e compromisso com a satisfação do cliente com os nossos produtos.</p>
+            </div>
+        </div>
+    </section>
+    <section class="catalogo" id="catalogo">
+        <h4>Nosso catalogo</h4>
+        <div class="masc">
+            <p>Masculino</p>
+            <p>Feminino</p>
+        </div>
+        <div class="box-container">
+            <div>
+                <img src="https://i.pinimg.com/736x/af/fe/04/affe04ed92e0e71ac728c2599bcd079d.jpg" width="150" height="170">
+                <p>Avental</p>
+            </div>
+            <div>
+                <img src="https://i.pinimg.com/736x/af/9e/0f/af9e0ff099dac0256842c3b6c257fdcc.jpg" width="150" height="170">
+                <p>Camiseta 100% algodão</p>
+            </div>
+            <div>
+                <img src="https://i.pinimg.com/736x/b5/76/c9/b576c9fbe98116eaacf8652f31c61409.jpg" width="150" height="170">
+                <p>Camiseta poliéster</p>
+            </div>
+            <div>
+                <img src="https://i.pinimg.com/736x/45/48/87/45488751d86ab4d77e88afdfeb9f2ffe.jpg" width="150" height="180">
+                <p>Calça Brim</p>
+            </div>
+        </div>
 
     </section>
 
