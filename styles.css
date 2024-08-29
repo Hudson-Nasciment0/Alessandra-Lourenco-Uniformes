@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.img-logo{
+    width: 12rem;
+    
+}
+
+header{
+    display: flex;
+    gap: 40%;
+    padding: 2% 3%;
+}
+
+nav{
+   margin-top: 40px;
+   display: flex;
+   gap: 60px;
+}
