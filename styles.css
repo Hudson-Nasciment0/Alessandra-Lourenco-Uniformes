@@ -19,8 +19,22 @@ body {
     background-size: cover;
     overflow-x: hidden;
 }
+/*
+#home{
+    background: url(https://img.freepik.com/fotos-premium/uma-prateleira-adornada-com-roupas-em-varios-tons-de-roxo-contra-um-fundo-branco-pristino-convidando-os-espectadores-para-o-mundo-do-estilo-e-da-sofisticacao_965119-38016.jpg?w=826);
+    background-size: 100vw 100vh;
 
-
+    #sobre{
+    background: linear-gradient(180deg, #c45df7, #ffffff);
+}
+}*/
+#home{
+    background: linear-gradient(100deg, #f770e9, #f79feb);
+    background-size: 100vw 100vh;
+}
+#sobre{
+    background: linear-gradient(180deg, #f770e9, #ffffff);
+}
 .container {
     width: 90%;
     max-width: 1200px;
@@ -33,12 +47,13 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background-color: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(10px);
+    background-color: rgba(225, 225, 225, 0.157);
+    backdrop-filter: blur(20px);
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
+    box-shadow: 1px 1px 20px #000000;
 }
 
 .img-logo {
@@ -201,6 +216,7 @@ CODIGO DO MENINO
 
 main {
     padding-top: 80px;
+    
 }
 
 section {
@@ -249,9 +265,19 @@ h2 {
 .text-box {
     padding: 2rem;
 }
+.text-box h1{
+    color: #000000;
+}
 .text-box p{
    margin-top: 2em;
    margin-bottom: 2em;
+   font-size: 1em;
+   font-family: "SUSE", sans-serif;
+   font-weight: 700;
+   color: #000000;
+}
+.two h3{
+    font-size: 25px;  
 }
 
 .contactar {
@@ -263,6 +289,7 @@ h2 {
     font-family: "Nerko One", sans-serif;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    border-radius: 10px;
 }
 
 .contactar:hover {
@@ -463,6 +490,18 @@ footer {
 
     .box-img, .text-box {
         width: 100%;
+    }
+    .box-img{
+        position: relative;
+        
+    }
+    .text-box{
+        position: relative;
+        bottom: 1em;
+    }
+    #home{
+        background: url(https://img.freepik.com/fotos-gratis/conceito-fast-fashion-com-loja-de-roupas-completa_23-2150871188.jpg?t=st=1724999519~exp=1725003119~hmac=ca4ece25e7a3e7fef0bd8f5653dbc40d90562377193a11e5dfdd4037bc5eca98&w=740);
+        background-size: 100vw 120vh;
     }
 }
 
