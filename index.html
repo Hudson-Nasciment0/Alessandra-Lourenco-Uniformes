@@ -5,20 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Uniformes profissionais personalizados de alta qualidade - Raquel Lourenço">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Raquel Lourenço - Uniformes Profissionais</title>
 </head>
 
 <body>
     <header>
-        <img class="img-logo" src="img/Moda-feminina2.png" alt="Logo Raquel Lourenço Uniformes">
+        <img class="img-logo" src="img/logo.png" alt="Logo Raquel Lourenço Uniformes">
         <nav>
             <button id="menu-toggle" aria-label="Toggle menu">☰</button>
             <ul id="nav-links">
@@ -36,6 +30,7 @@
                 <video autoplay muted loop>
                     <source src="img/video.mp4" type="video/mp4">
                 </video>
+                <div class="mascara-video"></div>
             </div>
             <article class="main">
                 <div class="box-img">
@@ -44,7 +39,7 @@
                 <div class="text-box">
                     <h1>Uniformes Profissionais</h1>
                     <p>Fornecemos uniformes profissionais de alta qualidade, personalizados para atender às necessidades específicas da sua empresa. Nossa experiência e compromisso com a excelência garantem conforto e estilo para sua equipe.</p>
-                    <a href="https://wa.me/+5511947972550?text=Olá, Gostaria de fazer o orçamento" target="_blank"><button class="contactar">Fazer o orçamento</button></a>
+                    <button class="contactar">Fazer o orçamento</button>
                 </div>
             </article>
         </section>
@@ -53,7 +48,7 @@
             <h2>SOBRE NÓS</h2>
             <div class="sobre">
                 <div class="logoTwo">
-                    <img src="img/logo-2 (2).png" alt="Logo secundário Raquel Lourenço" width="300">
+                    <img src="img/logo2.png" alt="Logo secundário Raquel Lourenço" width="300">
                 </div>
                 <div class="text-box two">
                     <h3>A Nossa missão</h3>
@@ -140,14 +135,33 @@
             </div>
         </section>
 
-        <section id="contato">
-            <h2>Entre em Contato</h2>
-            <form id="contact-form">
-                <input type="text" name="name" placeholder="Seu nome" required>
-                <input type="email" name="email" placeholder="Seu e-mail" required>
-                <textarea name="message" placeholder="Sua mensagem" required></textarea>
-                <button type="submit">Enviar</button>
-            </form>
+        <section class="contact" id="contact">
+            <h1 class="heading">Entre em Contato conosco</h1>
+            <div class="row">
+                <div class="image">
+                    <img src="img/brecho-form.png" alt="">
+                </div>
+
+                <form action="">
+                    <h3>Entre em Contato</h3>
+                    <div class="inputBox">
+                        <span class="fas fa-user"></span>
+                        <input type="text" placeholder="Nome:">
+                    </div>
+
+                    <div class="inputBox">
+                        <span class="fas fa-envelope"></span>
+                        <input type="email" placeholder="Email:">
+                    </div>
+
+                    <div class="inputBox">
+                        <span class="fas fa-phone"></span>
+                        <input type="number" placeholder="Telefone:">
+                    </div>
+
+                    <input type="submit" value="Enviar Mensagem" class="btn">
+                </form>
+            </div>            
         </section>
     </main>
 

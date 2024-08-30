@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: none;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
 }
 
 :root {
@@ -12,26 +18,14 @@
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
     color: var(--text-color);
-    
     background-size: cover;
     overflow-x: hidden;
+    font-family: "Roboto", sans-serif;
 }
-/*
-#home{
-    background: url(https://img.freepik.com/fotos-premium/uma-prateleira-adornada-com-roupas-em-varios-tons-de-roxo-contra-um-fundo-branco-pristino-convidando-os-espectadores-para-o-mundo-do-estilo-e-da-sofisticacao_965119-38016.jpg?w=826);
-    background-size: 100vw 100vh;
 
-    #sobre{
-    background: linear-gradient(180deg, #c45df7, #ffffff);
-}
-}*/
-#home{
-    background: linear-gradient(100deg, #f770e9, #f79feb);
-    background-size: 100vw 100vh;
-}
+
 #sobre{
     background: linear-gradient(180deg, #f770e9, #ffffff);
 }
@@ -53,7 +47,7 @@ header {
     width: 100%;
     top: 0;
     z-index: 1000;
-    box-shadow: 1px 1px 20px #000000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .img-logo {
@@ -72,10 +66,9 @@ nav ul li {
 
 nav a {
     text-decoration: none;
-    color: var(--text-color);
-    font-family: "Nerko One", sans-serif;
+    color: white;
     font-size: 1.1rem;
-    transition: color 0.3s ease;
+    transition: color 0.5s ease-in-out;
 }
 
 nav a:hover {
@@ -150,6 +143,7 @@ nav a:hover {
     height: 100%;
     overflow: hidden;
     z-index: -1; /* Garante que o vídeo fique atrás do conteúdo */
+    filter: brightness(100%);
 }
 
 .video-background video {
@@ -158,17 +152,13 @@ nav a:hover {
     object-fit: cover; /* Faz o vídeo cobrir o contêiner sem distorcer */
 }
 
-/* Aplica um desfoque ao fundo */
-#home::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+.mascara-video{
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Ajuste a cor e a opacidade conforme necessário */
-    filter: blur(8px); /* Ajuste o nível de desfoque conforme necessário */
-    z-index: -1; /* Coloca o desfoque atrás do conteúdo */
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.5) 15%, rgba(10, 12, 16, 0.3) 50%, rgba(10, 12, 16, 0.5) 85%);
+
 }
 
 /* Estilo do conteúdo sobreposto */
@@ -176,6 +166,7 @@ nav a:hover {
     position: relative;
     z-index: 1; /* Garante que o conteúdo fique acima do fundo */
     color: white; /* Ajusta a cor do texto para contrastar com o fundo */
+    min-height: calc(100vh - 85px);
 }
 
 .box-img img {
@@ -223,10 +214,6 @@ section {
     padding: 4rem 0;
 }
 
-h1, h2, h3 {
-    font-family: "Nerko One", sans-serif;
-}
-
 h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
@@ -266,15 +253,15 @@ h2 {
     padding: 2rem;
 }
 .text-box h1{
-    color: #000000;
+    color: white;
 }
 .text-box p{
    margin-top: 2em;
    margin-bottom: 2em;
    font-size: 1em;
-   font-family: "SUSE", sans-serif;
    font-weight: 700;
-   color: #000000;
+   color: white;
+   text-align: justify;
 }
 .two h3{
     font-size: 25px;  
@@ -286,15 +273,18 @@ h2 {
     border: none;
     padding: 0.8rem 1.5rem;
     font-size: 1rem;
-    font-family: "Nerko One", sans-serif;
     cursor: pointer;
     transition: background-color 0.3s ease;
     border-radius: 10px;
 }
 
 .contactar:hover {
-    background-color: var(--secondary-color);
-} */
+    background-color: transparent;
+    border: solid 2px;
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    transition: ease-in-out .3s;
+}
 
 .sobre {
     display: flex;
@@ -323,11 +313,11 @@ h2 {
 
 .filter-btn {
     background-color: #f0f0f0;
-    border: none;
+    border-radius: 4px;
+    font-weight: 600;
     padding: 0.5rem 1rem;
     margin: 0 0.5rem;
     cursor: pointer;
-    font-family: "Nerko One", sans-serif;
     font-size: 1rem;
     transition: background-color 0.3s ease;
 }
@@ -338,8 +328,11 @@ h2 {
 }
 
 .filter-btn:hover {
-    background-color: var(--secondary-color);
-    color: white;
+    border: solid 2px;
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    border: solid 2px;
+    transition: ease-in-out .3s;
 }
 
 .box-container {
@@ -367,32 +360,80 @@ h2 {
     display: none;
 }
 
-#contact-form {
-    max-width: 600px;
-    margin: 0 auto;
+.heading{
+    text-align: center;
+    color:  #0e0504;
 }
 
-#contact-form input,
-#contact-form textarea {
+.contact .row{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.contact .row .image{
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 40rem;
+    flex: 1 1 40rem;
+}
+
+.contact .row .image img{
+    width: 80%;
+}
+
+.contact .row form{
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 30rem;
+    flex: 1 1 30rem;
+    border: 0.1rem solid #4b1f0e;
+    padding: 2rem;
+}
+
+.contact .row form h3{
+    font-size: 2rem;
+    text-align: center;
+    color: #0e0504;
+}
+
+
+.contact .row form .inputBox{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background: #4b1f0e;
+    border: #4b1f0e;
+    border-radius: 15px;
+}
+
+.contact .row form .inputBox span{
+    color: #be7656;
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+
+.contact .row form .inputBox input{
     width: 100%;
-    padding: 0.8rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    padding: 1rem;
+    font-size: 1rem;
+    color: #fff;
+    background: none;
 }
 
-#contact-form button {
-    background-color: var(--primary-color);
-    color: white;
+.btn{
+    background-color: #be7656;
+    color: #fff;
     border: none;
     padding: 0.8rem 1.5rem;
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
-}
-
-#contact-form button:hover {
-    background-color: var(--secondary-color);
+    border-radius: 10px;
 }
 
 footer {
