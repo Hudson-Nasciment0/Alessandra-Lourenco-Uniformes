@@ -15,7 +15,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
     color: var(--text-color);
-    background: url(https://i.pinimg.com/564x/91/15/0b/91150bef38491b46c23edc9d67f5fa60.jpg) no-repeat center center fixed;
+    
     background-size: cover;
     overflow-x: hidden;
 }
@@ -107,11 +107,18 @@ h2 {
 .box-img, .text-box {
     flex: 1;
     min-width: 300px;
+    
+}
+
+.box-img{
+   max-width: 40%;
+   padding-left: 2em;
 }
 
 .box-img img {
     max-width: 100%;
     height: auto;
+    
 }
 
 .text-box {
@@ -141,6 +148,7 @@ h2 {
 }
 
 .logoTwo {
+    max-width: 40%;
     flex: 1;
     min-width: 300px;
     text-align: center;
