@@ -260,9 +260,10 @@ h2 {
    margin-bottom: 2em;
    font-size: 1em;
    font-weight: 700;
-   color: white;
+   
    text-align: justify;
 }
+
 .two h3{
     font-size: 25px;  
 }
