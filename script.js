@@ -41,3 +41,27 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+let previewContainer = document.querySelector(".products-preview");
+let previewBox = previewContainer.querySelectorAll(".preview");
+
+document.querySelectorAll(".box-container .catalog-item").forEach(product => {
+    product.onclick = () =>{
+        previewContainer.style.display = 'flex';
+        let name = product.getAttribute("data-name");
+        previewBox.forEach(preview =>{
+            let target = preview.getAttribute("data-target");
+            if(name == target){
+                preview.classList.add("ativo")
+            }
+        })
+    }
+});
+
+previewBox.forEach(close =>{
+    close.querySelector('.material-symbols-outlined').onclick = () =>{
+        close.classList.remove("ativo")
+        previewContainer.style.display = 'none';
+    }
+
+})
