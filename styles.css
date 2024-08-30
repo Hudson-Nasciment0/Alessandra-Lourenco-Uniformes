@@ -75,6 +75,130 @@ nav a:hover {
     cursor: pointer;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estiliza o contêiner da seção para garantir que o vídeo ocupe toda a área */
+#home {
+    position: relative;
+    overflow: hidden; /* Garante que nada saia dos limites da seção */
+}
+
+/* Estiliza o vídeo de fundo para cobrir toda a área da seção */
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Garante que o vídeo fique atrás do conteúdo */
+}
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Faz o vídeo cobrir o contêiner sem distorcer */
+}
+
+/* Aplica um desfoque ao fundo */
+#home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Ajuste a cor e a opacidade conforme necessário */
+    filter: blur(8px); /* Ajuste o nível de desfoque conforme necessário */
+    z-index: -1; /* Coloca o desfoque atrás do conteúdo */
+}
+
+/* Estilo do conteúdo sobreposto */
+.main {
+    position: relative;
+    z-index: 1; /* Garante que o conteúdo fique acima do fundo */
+    color: white; /* Ajusta a cor do texto para contrastar com o fundo */
+}
+
+.box-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.text-box {
+    max-width: 600px; /* Ajuste conforme necessário */
+    margin: 0 auto;
+    text-align: center; /* Ajuste conforme necessário */
+}
+
+.contactar {
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CODIGO DO MENINO
+
 main {
     padding-top: 80px;
 }
@@ -143,7 +267,7 @@ h2 {
 
 .contactar:hover {
     background-color: var(--secondary-color);
-}
+} */
 
 .sobre {
     display: flex;
