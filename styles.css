@@ -383,8 +383,13 @@ h2 {
     flex: 1 1 40rem;
 }
 
+.image, .row{
+    padding: 2rem 2rem;
+}
+
 .contact .row .image img{
-    width: 80%;
+    width: 100%;
+    
 }
 
 .contact .row form{
@@ -435,7 +440,11 @@ h2 {
     cursor: pointer;
     transition: background-color 0.3s ease;
     border-radius: 10px;
+    margin: 0 auto;
+    display: block;
 }
+
+
 
 footer {
     background-color: rgba(255, 255, 255, 0.8);
@@ -502,6 +511,10 @@ footer {
         display: block;
     }
 
+    header{
+        height: 4em;
+    }
+
     nav ul {
         display: none;
         flex-direction: column;
@@ -514,16 +527,22 @@ footer {
 
     nav ul.show {
         display: flex;
+        background-color: rgba(225, 225, 225, 0.157);
     }
 
     nav ul li {
         margin: 0;
         text-align: center;
+        background-color: rgba(143, 141, 141, 0.157);
+        
+        
     }
 
     nav ul li a {
         display: block;
         padding: 0.5rem;
+        color: #0e0504;
+        font-weight: 600;
     }
 
     .main {
