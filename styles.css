@@ -499,8 +499,8 @@ footer {
         display: block;
     }
 
-    #home{
-        z-index: -1;
+    .video{
+        z-index: 3;
     }
 
     header{
@@ -552,10 +552,7 @@ footer {
         position: relative;
         bottom: 1em;
     }
-    #home{
-        background: url(https://img.freepik.com/fotos-gratis/conceito-fast-fashion-com-loja-de-roupas-completa_23-2150871188.jpg?t=st=1724999519~exp=1725003119~hmac=ca4ece25e7a3e7fef0bd8f5653dbc40d90562377193a11e5dfdd4037bc5eca98&w=740);
-        background-size: 100vw 120vh;
-    }
+    
 }
 
 @media (max-width: 480px) {
