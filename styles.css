@@ -499,6 +499,10 @@ footer {
         display: block;
     }
 
+    #home{
+        z-index: -1;
+    }
+
     header{
         height: 4em;
     }
