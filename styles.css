@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 
 * {
     margin: 0;
@@ -8,6 +8,7 @@
     outline: none;
     list-style: none;
     text-decoration: none;
+    font-family: "Montserrat", sans-serif;
 }
 
 :root {
@@ -19,7 +20,7 @@
 
 body {
     line-height: 1.6;
-    color: var(--text-color);
+    color: #000000;
     background-size: cover;
     overflow-x: hidden;
     font-family: "Roboto", sans-serif;
@@ -27,7 +28,10 @@ body {
 
 
 #sobre{
-    background: linear-gradient(180deg, #f770e9, #ffffff);
+    background: linear-gradient(180deg, #2a2a2a, #e7e5e1);
+}
+#catalogo{
+    background: linear-gradient(180deg, #e7e5e1, #ffffff);
 }
 .container {
     width: 90%;
@@ -41,10 +45,11 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background-color: rgba(225, 225, 225, 0.157);
+    background-color: rgba(107, 107, 107, 0.43);
     backdrop-filter: blur(20px);
     position: fixed;
     width: 100%;
+    height: 5rem;
     top: 0;
     z-index: 1000;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -72,7 +77,7 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--primary-color);
+    color: #e7e5e1;
 }
 
 #menu-toggle {
@@ -169,11 +174,6 @@ nav a:hover {
     min-height: calc(100vh - 85px);
 }
 
-.box-img img {
-    max-width: 100%;
-    height: auto;
-}
-
 .text-box {
     max-width: 600px; /* Ajuste conforme necessário */
     margin: 0 auto;
@@ -240,11 +240,11 @@ h2 {
 
 .box-img{
    max-width: 40%;
-   padding-left: 2em;
+   padding-left: 5em;
 }
 
 .box-img img {
-    max-width: 100%;
+    max-width: 70%;
     height: auto;
     
 }
@@ -253,7 +253,7 @@ h2 {
     padding: 2rem;
 }
 .text-box h1{
-    color: white;
+    color: #e7e5e1;
 }
 .text-box p{
    margin-top: 2em;
@@ -269,11 +269,11 @@ h2 {
 }
 
 .contactar {
-    background-color: var(--primary-color);
-    color: white;
+    background-color: #e7e5e1;
+    color: #000000;
     border: none;
     padding: 0.8rem 1.5rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
     border-radius: 10px;
@@ -282,8 +282,8 @@ h2 {
 .contactar:hover {
     background-color: transparent;
     border: solid 2px;
-    border-color: var(--primary-color);
-    color: var(--primary-color);
+    border-color: #e7e5e1;
+    color: #e7e5e1;
     transition: ease-in-out .3s;
 }
 
@@ -324,14 +324,14 @@ h2 {
 }
 
 .filter-btn.active {
-    background-color: var(--primary-color);
+    background-color: #000000;
     color: white;
 }
 
 .filter-btn:hover {
     border: solid 2px;
-    border-color: var(--primary-color);
-    color: var(--primary-color);
+    border-color: #e7e5e1;
+    color: #ffffff;
     border: solid 2px;
     transition: ease-in-out .3s;
 }
@@ -396,7 +396,7 @@ h2 {
     -webkit-box-flex: 1;
     -ms-flex: 1 1 30rem;
     flex: 1 1 30rem;
-    border: 0.1rem solid #4b1f0e;
+    border: 0.1rem solid #000000;
     padding: 2rem;
 }
 
@@ -412,13 +412,13 @@ h2 {
     align-items: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    background: #4b1f0e;
-    border: #4b1f0e;
+    background: #000000;
+    border: #e7e5e1;
     border-radius: 15px;
 }
 
 .contact .row form .inputBox span{
-    color: #be7656;
+    color: #e7e5e1;
     font-size: 2rem;
     padding-left: 2rem;
 }
@@ -432,8 +432,8 @@ h2 {
 }
 
 .btn{
-    background-color: #be7656;
-    color: #fff;
+    background-color: #e7e5e1;
+    color: #000000;
     border: none;
     padding: 0.8rem 1.5rem;
     font-size: 1rem;
@@ -460,7 +460,7 @@ footer {
 
 .products-preview{
     position: fixed;
-    top: 10%;
+    top: 5%;
     left: 0;
     min-height: 100vh;
     width: 100%;
@@ -471,15 +471,16 @@ footer {
 }
 .products-preview .preview{
     display: none;
-    padding: 2rem;
+    padding: 1rem;
     text-align: center;
     background: #fff;
     position: relative;
-    margin: 2rem;
+    margin: 1rem;
     width: 40rem;
 }
 .products-preview .preview.ativo{
     display: inline-block;
+    z-index: 99;
 }
 .products-preview .preview img{
     height: 13rem;
@@ -553,9 +554,9 @@ footer {
         width: 100%;
     }
     .box-img{
-        position: relative;
-        
+        position: relative;   
     }
+    
     .text-box{
         position: relative;
         bottom: 1em;
