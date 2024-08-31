@@ -96,43 +96,6 @@ nav a:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Estiliza o contêiner da seção para garantir que o vídeo ocupe toda a área */
 #home {
     position: relative;
@@ -169,7 +132,7 @@ nav a:hover {
 /* Estilo do conteúdo sobreposto */
 .main {
     position: relative;
-    z-index: 1; /* Garante que o conteúdo fique acima do fundo */
+     /* Garante que o conteúdo fique acima do fundo */
     color: white; /* Ajusta a cor do texto para contrastar com o fundo */
     min-height: calc(100vh - 85px);
 }
@@ -440,6 +403,9 @@ footer {
     margin: 0 0.5rem;
 }
 
+
+                    /* Informações dos Produtos */
+
 .products-preview{
     position: fixed;
     top: 5%;
@@ -451,6 +417,9 @@ footer {
     align-items: center;
     justify-content: center;
 }
+
+
+
 .products-preview .preview{
     display: none;
     padding: 1rem;
@@ -465,7 +434,7 @@ footer {
     z-index: 99;
 }
 .products-preview .preview img{
-    height: 13rem;
+    height: 10rem;
 }
 .products-preview .preview .material-symbols-outlined{
     position: absolute;
@@ -482,7 +451,7 @@ footer {
 .products-preview .preview h3{
     color: #444;
     padding: .5rem 0;
-    font-size: 2rem;
+    font-size: 1rem;
 }
 .products-preview .preview ul li strong{
     color: #444;
@@ -498,6 +467,8 @@ footer {
     #menu-toggle {
         display: block;
     }
+
+    
 
     .video{
         z-index: 3;
@@ -545,7 +516,8 @@ footer {
         width: 100%;
     }
     .box-img{
-        position: relative;   
+        position: relative;  
+        margin-top: 6%; 
     }
     
     .text-box{
